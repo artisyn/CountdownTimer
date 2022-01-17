@@ -1,5 +1,48 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	background-image: url('https://images.unsplash.com/photo-1415356838286-df6fd593e8b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: 'Mukta', sans-serif;
+	font-size: 16px;
+}
+header {
+}
+
+.title {
+	font-size: 5rem;
+	color: #fafcff;
+	text-align: center;
+}
+.timerContainer {
+	margin: 0 auto;
+	/* max-width: 25rem; */
+	max-width: 80vw;
+	border: 1px solid yellowgreen;
+	display: flex;
+	justify-content: space-evenly;
+}
+.timerEl {
+	/* min-width: 4rem; */
+	min-width: 15%;
+	min-height: 10rem;
+
+	border: 2px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.timerEl__time {
 }
