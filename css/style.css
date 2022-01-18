@@ -16,8 +16,6 @@ body {
 	font-family: 'Mukta', sans-serif;
 	font-size: 16px;
 }
-header {
-}
 
 .title {
 	font-size: 5rem;
@@ -30,12 +28,12 @@ header {
 	max-width: 80vw;
 	/* border: 1px solid yellowgreen; */
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 .timerEl {
-	/* min-width: 4rem; */
-	min-width: 15%;
-	/* max-height: ; */
+	min-width: 10rem;
 	border: 3px solid white;
 	border-radius: 0.5rem;
 	display: flex;
@@ -59,4 +57,21 @@ header {
 	padding: 1rem 0;
 	margin-bottom: 0;
 	border-radius: 0.5rem;
+}
+@media screen and (max-width: 650px) {
+	.title {
+		font-size: 3rem;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+
+	.timerEl__time {
+		font-size: 3rem;
+	}
+	.timerContainer {
+		max-width: 98vw;
+	}
+	.timerEl__description {
+		margin-top: 0;
+	}
 }
